@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 <body>
-    <section class="header">
+    <section class="header" id="navLinks">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
             <div class="nav-links">
-                <i class="fa fa-times"></i>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -21,16 +21,39 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
             <h1>Casey Pei</h1>
-            <p>Honors Engineering Student and Brown Scholar at Texas A&M University.</p>
+            <p>Honors Engineering Student and Brown Scholar at Texas A&M University.<br><br>
+                <em>I'm a freshman Brown Scholar and Engineering Honors attending Texas A&M,<br> 
+                primarily interested in pursuing a computer science degree. I am currently <br>
+                participating in a game jam using Unity and C#, and am working to build my <br>
+                 in C++ and creating websites.<br><br>
+                I have experience coding in Java, Javascript and Python, and am looking <br>
+                for other opportunities for professional and skill development.<br><br>
+                At graduation, I was ranked first out my class of 415. During my academic <br> 
+                career, I've been a leader in Science Olympiad and Speech and Debate -- <br>
+                going to Nationals in Science Olympiad and winning third place in Lincoln <br>
+                Douglas debate at state my senior year.</em></p>
             <a href="" class="cow-btn">Contact Me</a>
         </div>
     </section>
 
+<!-- ----Javascript for Toggle Menu---- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
 
 </body>
 </html>>
