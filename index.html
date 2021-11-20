@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Casey Pei's Personal Site</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 <body>
     <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-times"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">TRANSPORTATION</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"></i>
+        </nav>
 
+        <div class="text-box">
+            <h1>Casey Pei</h1>
+            <p>Honors Engineering Student and Brown Scholar at Texas A&M University.</p>
+            <a href="" class="cow-btn">Contact Me</a>
+        </div>
     </section>
 
 
 </body>
 </html>>
+
+<!-- Just a note: you need to add "html, 
+    body {overflow-x: hidden;}" in the media query 
+    in order to prevent the user from being able to scroll 
+    to the nav-links bar when it is has a negative right value. -->
